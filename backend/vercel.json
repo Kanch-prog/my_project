@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
      {
-      "src": "./proxy.js",
+      "src": "proxy.js",
       "use": "@vercel/node",
       "config": { "includeFiles": ["dist/**"] }
      }
@@ -10,7 +10,7 @@
     "routes": [
      {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "proxy.js"
      }
     ]
    }
